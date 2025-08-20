@@ -55,7 +55,7 @@
 #include "mathops.h"
 #include "stack_alloc.h"
 
-#if defined (__mips_dsp)
+#if defined (__mips_dsp) && __mips == 32
 
 static inline int S_MUL_ADD_PSR(int a, int b, int c, int d, int shift) {
     long long acc = __builtin_mips_mult(a, b);

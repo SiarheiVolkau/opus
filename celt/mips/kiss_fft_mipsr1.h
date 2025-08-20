@@ -30,7 +30,7 @@
 #error "This file should only be included from _kiss_fft_guts.h"
 #endif
 
-#if defined(__mips_dsp)
+#if defined(__mips_dsp) && __mips == 32
 
 
 static inline int S_MUL_ADD(int a, int b, int c, int d) {
